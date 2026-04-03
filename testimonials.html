@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment section</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>
+            <a href="index.html">Memory Wall 2026</a>
+        </h1>
+        <div class="information-container">
+            <ul>
+                <li>
+                    1,000,000 pixels &#128309;
+                </li>
+                <li>
+                    You can buy pixel by pixel for just $1 &#128309;
+                </li>
+                <li>
+                    Become part of internet history in 2026! <span id="invisible-one">&#128309;</span>
+                </li>
+            </ul>
+        </div>
+        <div class="avail-sold-container">
+            <ul>
+                <li>
+                    Sold:
+                    <span id="sold">
+                        0
+                    </span>
+                </li>
+                <li>
+                    Available:
+                    <span id="available">
+                        0
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="options-container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Homepage
+                    </a>
+                    &nbsp;&nbsp;|
+                </li>
+                <li>
+                    <a href="payments.html">
+                        Buy pixels
+                    </a>
+                    &nbsp; |
+                </li>
+                <li>
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+                    &nbsp;&nbsp;|
+                </li>
+                <li>
+                    <a href="pixel-list.html">
+                        Pixel list
+                    </a>
+                    &nbsp;&nbsp; |
+                </li>
+                <li>
+                    <a href="testimonials.html">
+                        Testimonials
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <section class="testimonial-container">
+
+            <h2>Leave a Testimonial</h2>
+
+            <form>
+
+                <label for="name">Name</label><br>
+                <input id="nombreUsuario" type="text" name="name" placeholder="Your name" required>
+                <br><br>
+
+                <label for="website">Website</label><br>
+                <input id="sitioWeb" type="url" name="website" placeholder="https://yourwebsite.com">
+                <br><br>
+
+                <label for="testimonial">Your Testimonial</label><br>
+                <textarea id="textoTestimonio" name="testimonial" rows="5" placeholder="Write what you think about this project..."
+                    required></textarea>
+                <br><br>
+
+                <button id="btnSend" type="submit">Submit Testimonial</button>
+
+            </form>
+
+        </section>
+        <section>
+            <ul class="testimonials">
+            </ul>
+        </section>
+        <footer class="footer">
+            <p>
+                Memory Wall © 2026 Michelle J.
+                All rights reserved. External images belong to their respective owners.
+                Made with ♡ in the Dominican Republic.
+            </p>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

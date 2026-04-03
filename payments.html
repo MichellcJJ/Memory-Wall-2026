@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment section</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>
+            <a href="index.html">Memory Wall 2026</a>
+        </h1>
+        <div class="information-container">
+            <ul>
+                <li>
+                    1,000,000 pixels &#128309;
+                </li>
+                <li>
+                    You can buy pixel by pixel for just $1 &#128309;
+                </li>
+                <li>
+                    Become part of internet history in 2026! <span id="invisible-one">&#128309;</span>
+                </li>
+            </ul>
+        </div>
+        <div class="avail-sold-container">
+            <ul>
+                <li>
+                    Sold:
+                    <span id="sold">
+                        0
+                    </span>
+                </li>
+                <li>
+                    Available:
+                    <span id="available">
+                        0
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="options-container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Homepage
+                    </a>
+                    &nbsp;&nbsp;|
+                </li>
+                <li>
+                    <a href="payments.html">
+                        Buy pixels
+                    </a>
+                    &nbsp; |
+                </li>
+                <li>
+                    <a href="faq.html">
+                        FAQ
+                    </a>
+                    &nbsp;&nbsp;|
+                </li>
+                <li>
+                    <a href="pixel-list.html">
+                        Pixel list
+                    </a>
+                    &nbsp;&nbsp; |
+                </li>
+                <li>
+                    <a href="testimonials.html">
+                        Testimonials
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="payment-section">
+
+        <h2>Buy Your Spot</h2>
+
+        <form>
+
+            <div class="payment-details">
+                <h3>Your Information</h3>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="John" required>
+                <br><br>
+
+                <label for="website">Website:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://www.mysite.com">
+                <br><br>
+
+                <label id="image" for="image">Image:</label><br>
+                <input type="file" id="image" name="image" accept="image/*">
+                <p id="small-size">
+                    Accepted formats: JPG, PNG, WEBP. (Maximum size: 20x20 pixels.)
+                </p>
+                <br><br>
+
+                <label for="alt">Alt text:</label><br>
+                <input type="text" id="alt" name="alt" placeholder="Best website ever">
+                <br><br>
+
+
+                <h3>Pixel Position</h3>
+
+                <div class="pixel-container">
+                    <div class="rows">
+                        <label for="row">Row:</label><br>
+                        <input type="number" id="row" name="row" placeholder="20" min="1">
+                    </div>
+
+                    <div class="columns">
+                        <label for="column">Column:</label><br>
+                        <input type="number" id="column" name="column" placeholder="45" min="1">
+                    </div>
+                </div>
+                <br><br>
+
+
+                <div class="button-container">
+                    <button type="submit">
+                        Continue with <img src="img/Paypal.svg" alt="paypal button">
+                    </button>
+                    <p id="small-size">
+                        All submissions are manually reviewed before appearing on the wall.
+                    </p>
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+    <footer class="footer">
+        <p>
+            Memory Wall © 2026 Michelle J.
+            All rights reserved. External images belong to their respective owners.
+            Made with ♡ in the Dominican Republic.
+        </p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
